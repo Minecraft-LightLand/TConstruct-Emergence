@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+[[mods]]
+modId="tconstruct_emergence"
+version="${file.jarVersion}" #mandatory
+displayName="Tinkers Construct: Emergence" #mandatory
+logoFile="logo.png" #optional
+credits="LightLand team" #optional
+authors="lcy0x1" #optional
+description='''
+This mod adds Tinkers Construct weapons to mobs
+'''
+[[dependencies.tconstruct_emergence]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.tconstruct_emergence]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20,1.21)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.tconstruct_emergence]]
+    modId="tconstruct"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
