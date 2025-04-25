@@ -26,7 +26,9 @@ public class TConstructEmergence {
 
 	@SubscribeEvent(priority = EventPriority.HIGH)
 	public static void onGatherData(GatherDataEvent event) {
+		REGISTRATE.addDataGenerator(ProviderType.ITEM_TAGS, TCETagGen::itemTags);
 		REGISTRATE.addDataGenerator(ProviderType.ENTITY_TAGS, TCETagGen::genEntityTag);
+		REGISTRATE.addDataGenerator(ProviderType.ADVANCEMENT, TCAdv::genAdvancements);
 	}
 
 }

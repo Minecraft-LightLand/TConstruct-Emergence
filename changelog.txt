@@ -1,2 +1,6 @@
+1.0.1
+- Add Melee weapons
+- Add advancement-controlled max material tiers
+
 1.0.0
 - Initial Release

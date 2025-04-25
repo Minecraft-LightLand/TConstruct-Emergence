@@ -13,11 +13,13 @@ public class TCEModConfig {
 		public final ForgeConfigSpec.DoubleValue weaponChance;
 		public final ForgeConfigSpec.DoubleValue dropChanceOverride;
 		public final ForgeConfigSpec.IntValue maxMaterialTier;
+		public final ForgeConfigSpec.BooleanValue lockAdvancedMeleeWeapons;
 
 		Common(ForgeConfigSpec.Builder builder) {
 			weaponChance = builder.defineInRange("weaponChance", 0.1d, 0, 1);
 			dropChanceOverride = builder.defineInRange("dropChanceOverride", 0.1, 0, 1);
 			maxMaterialTier = builder.defineInRange("maxMaterialTier", 3, 0, 5);
+			lockAdvancedMeleeWeapons = builder.define("lockAdvancedMeleeWeapons", false);
 		}
 
 	}
